@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 FOR</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+        <main>
+        <header>
+            <h3>Imprimir en una página web los 6 niveles de encabezamientos desde -h1- hasta -h6- con el texto que indique "Encabezado de nivel x"</h3>
+        </header>
+            <hr>
+            <section>
+                <script>
+                    var i;
+
+                    for (let i = 1; i <=6 ;i++) {
+                        let heading = document.createElement('h' + i);
+                        heading.textContent = 'Encabezamiento de nivel ' + i;
+                        document.body.appendChild(heading);
+                    }
+
+                </script>
+            </section>
+        </main> 
+</body>
+</html>

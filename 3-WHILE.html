@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 WHILE</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h3>Diseñar un programa que permita calcular los 4 primeros números pares para posteriormente calcular su media aritmética.</h3>
+        </header>
+        <hr>
+    
+    <section>
+        <script>
+            var cont=0,sum=0,pro,n=0;
+            while (cont<=4 && n<10) {
+                if (n%2==0) {
+                    sum=n+sum;
+                    cont++;
+                }
+                n++;
+            }
+            pro=sum/4;
+            document.write("El promedio es "+pro );
+    
+        </script>
+        </main>
+    </section>
+</body>
+</html>

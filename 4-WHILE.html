@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 WHILE</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h3>Dado N calcular: (11)+(22)+(33)+……(NN)</h3>
+        </header>
+            <hr>
+    
+    <script>
+        var sum=0,n=1;
+        while (n<=100) {   
+            if (n%11==0) {
+                sum=n+sum;
+                
+                document.write(" " +n+"<br>" );
+            }
+            n++;
+        }
+        
+        document.write("La suma es "+sum );
+        
+    </script>
+    </main>
+</body>
+</html>
